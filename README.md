@@ -35,17 +35,23 @@ Puedes encontrarlos en la carpeta `data/` de este repositorio o descargarlos des
 
 * Ingresa a [Databricks Community](https://community.cloud.databricks.com/)
 * Crea un nuevo **cluster** con Databricks Runtime 11.3 LTS o superior
+* Para **Free Edition** esto no es necesario ya que se crea por default **Serverless Starter Warehouse**
 
-### 2. Importar el archivo `.dbc`
+### 4. Importar el archivo `.dbc`
 
 * Desde el menú lateral izquierdo en Databricks, selecciona **Workspace**
 * Haz clic en **Import** y sube el archivo `.dbc` que viene en este repositorio
 
-### 3. Subir los archivos CSV/JSON
+### 2. Subir los archivos CSV/JSON
 
-* En el menú izquierdo ve a **Data** > **Add Data** > **Upload File**
+* En el menú izquierdo ve a **Data** > **Add Data** > **Upload files to volume**
 * Carga los archivos `.csv` y `.json`
-* Guárdalos en `/FileStore/data_hackers/primer_etl/`
+* Guárdalos en `/Volumes/workspace/default/primer-etl/`
+
+### 3. Crear Carpetas
+* En el menú izquierdo **Workspace** Se crean la carpeta **Primer ETL con Databricks** y las subcarpetas **ETL CSV** y **ETL JSON** 
+* Paralelamente subí el archivo .dbc ( .dbc es un formato de archivo binario de Databricks que se utiliza para exportar cuadernos de Databricks. Es un formato autocontenido que puede incluir el código, los metadatos y las salidas de los comandos del cuaderno. Este formato es útil para importar y exportar cuadernos entre áreas de trabajo de Databricks) >> sobre una carpeta: Click derecho > Importar
+  
 
 ### 4. Ejecutar los notebooks
 
